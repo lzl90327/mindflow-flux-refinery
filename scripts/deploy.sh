@@ -94,7 +94,7 @@ echo -e "${BLUE}[INFO]${NC} 步骤 4/7: 远程安装依赖..."
 
 ssh $REMOTE_HOST << 'EOF'
 cd /Users/lizuolin_cloud/mindflow-flux-refinery
-npm install --production
+npm install
 EOF
 
 echo -e "${GREEN}[OK]${NC}   依赖安装完成"
