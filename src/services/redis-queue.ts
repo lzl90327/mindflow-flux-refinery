@@ -50,7 +50,7 @@ export class RedisQueue {
       await this.ensureGroup(groupName);
 
       // 从 Stream 读取消息
-      const results = await this.client.xreadgroup(
+      const results: any = await (this.client as any).xreadgroup(
         'GROUP',
         groupName,
         consumerName,

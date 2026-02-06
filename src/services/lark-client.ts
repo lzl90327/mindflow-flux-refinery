@@ -38,7 +38,7 @@ class LarkClient {
         },
       });
 
-      if (!response.success) {
+      if (response.code !== 0) {
         throw new Error(`更新记录失败: ${response.msg || response.code}`);
       }
 
